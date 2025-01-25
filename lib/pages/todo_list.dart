@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:study_flutter/pages/add_and_update_todo.dart';
 import 'package:study_flutter/pages/todo_screen.dart';
 
 class TodoList extends StatefulWidget {
@@ -32,12 +33,14 @@ class _TodoListState extends State<TodoList> {
             ),
           ),
           body:
-              TabBarView(
-                children:[
-                  TodoScreen(),
-                  TodoScreen(),
-                  TodoScreen()
-                ]),
+              TabBarView(children: [TodoScreen(), TodoScreen(), TodoScreen()]),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AddAndUpdateTodo()));
+            },
+            child: Icon(Icons.add),
+          ),
         ));
   }
 }
