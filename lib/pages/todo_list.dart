@@ -34,9 +34,9 @@ class _TodoListState extends State<TodoList> {
           body:
               TabBarView(
                 children:[
-                  Text("Data"),
-                  Text("Data"),
-                  Text("Data"),
+                  TodoScreen(),
+                  TodoScreen(),
+                  TodoScreen()
                 ]),
         ));
   }
