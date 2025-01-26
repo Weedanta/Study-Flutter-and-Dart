@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:study_flutter/pages/add_and_update_todo.dart';
-import 'package:study_flutter/pages/todo_screen.dart';
+import 'package:study_flutter/src/pages/add_and_update_todo.dart';
+import 'package:study_flutter/src/pages/todo_screen.dart';
 
 class TodoList extends StatefulWidget {
   const TodoList({super.key});
